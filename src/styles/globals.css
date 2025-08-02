@@ -1,0 +1,10 @@
+.page-container {
+  padding: 2rem;
+}
+
+.art-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
