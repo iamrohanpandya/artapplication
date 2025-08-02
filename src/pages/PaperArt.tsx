@@ -1,14 +1,21 @@
 import React from 'react';
-import ArtCard from '../components/ArtCard';
 import { paperArtData } from '../data/paperArtData';
+import '../styles/PaperArt.css';
 
 const PaperArt = () => {
   return (
-    <div className="page-container">
-      <h2>Paper Art Gallery</h2>
-      <div className="art-grid">
+    <div className="paper-container">
+      <h2 className="paper-heading">Paper Art Gallery</h2>
+      <div className="paper-grid">
         {paperArtData.map((art) => (
-          <ArtCard key={art.id} title={art.title} image={art.image} description={art.description} />
+          <div className="paper-card" key={art.id}>
+            <img src={art.image} alt={art.title} className="paper-image" />
+            <div className="paper-info">
+              <h3>{art.title}</h3>
+              {art.description && <p>{art.description}</p>}
+              <button>OPTIONS AVAILABLE</button>
+            </div>
+          </div>
         ))}
       </div>
     </div>

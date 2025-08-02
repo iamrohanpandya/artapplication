@@ -1,17 +1,28 @@
 .navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
   padding: 1rem 2rem;
-  background-color: #fff4e6;
-  border-bottom: 1px solid #e0cfc2;
-  flex-wrap: wrap;
 }
 
-.navbar-title {
+.logo {
   font-size: 1.5rem;
-  color: #5e3b1e;
-  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
 }
 
 .nav-links {
@@ -20,15 +31,24 @@
 }
 
 .nav-links a {
+  color: #333;
   text-decoration: none;
-  color: #7b4b26;
   font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #b07a45;
 }
 
 @media (max-width: 768px) {
   .nav-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .navbar-container {
     flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
+    align-items: flex-start;
   }
 }

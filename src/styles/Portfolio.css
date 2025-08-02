@@ -1,0 +1,37 @@
+.portfolio-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Georgia', serif;
+  color: #2e2e2e;
+  background-color: #fff;
+  line-height: 1.8;
+}
+
+.portfolio-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #b07a45;
+  font-family: 'Playfair Display', serif;
+}
+
+.portfolio-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .portfolio-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .portfolio-heading {
+    font-size: 1.6rem;
+  }
+
+  .portfolio-content p {
+    font-size: 0.95rem;
+  }
+}

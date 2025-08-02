@@ -1,22 +1,15 @@
 import React from 'react';
 import './Footer.css';
-import { Link } from 'react-router-dom';
 
-// Footer.tsx
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#f7f2ed] text-center py-4 text-sm">
-      <div className="text-gray-700">
-        &copy; {new Date().getFullYear()} Shutrashilps. All rights reserved.
-      </div>
-      <div className="flex justify-center gap-4 mt-2 text-xs text-gray-600">
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+    <footer className="footer">
+      <div className="footer-container">
+        <p>© 2025 Shutrashilps. All rights reserved.</p>
+        <p>Made with ❤️ for art lovers.</p>
       </div>
     </footer>
   );
 };
 
 export default Footer;
-

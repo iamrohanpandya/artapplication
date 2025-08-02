@@ -9,6 +9,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import './App.css'; // ✅ Import CSS file
 
+
 function App() {
   return (
     <Router>
@@ -22,6 +23,7 @@ function App() {
             <Route path="/paper-art" element={<PaperArt />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
