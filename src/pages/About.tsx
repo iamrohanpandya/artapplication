@@ -1,14 +1,14 @@
-import React from 'react';
+
 import './About.css';
 
 const About = () => {
   return (
     <div className="about-container">
-      <h2>About Shutrashilps</h2>
+      <h2>About Sutrashilps</h2>
 
       <div className="about-content">
         <p>
-          Welcome to <strong>Shutrashilps</strong> — a space where passion for detail and handcrafted beauty comes alive.
+          Welcome to <strong>Sutrashilps</strong> — a space where passion for detail and handcrafted beauty comes alive.
           My name is [Your Name], and I specialize in creating <strong>miniature art</strong> and intricate <strong>paper crafts</strong>.
         </p>
 

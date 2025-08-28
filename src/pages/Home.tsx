@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { miniatureArtData } from '../data/miniatureData';
 import { paperArtData } from '../data/paperArtData';
 import { Link } from 'react-router-dom';
@@ -14,7 +14,7 @@ const Home = () => {
       {/* Hero / Banner */}
       <section className="hero-section">
         <div className="hero-content">
-          <h1>Welcome to <span className="highlight">Shutrashilps</span></h1>
+          <h1>Welcome to <span className="highlight">Sutrashilps</span></h1>
           <p>
             Celebrating the soul of Indian culture through miniature and paper art.<br />
             Explore a world where every detail is made by hand and heart.
@@ -59,9 +59,9 @@ const Home = () => {
 
       {/* Mission / About Short */}
       <section className="about-short">
-        <h3>About Shutrashilps</h3>
+        <h3>About Sutrashilps</h3>
         <p>
-          Shutrashilps is the vision of an artist dedicated to reviving Indian traditions and stories
+          Sutrashilps is the vision of an artist dedicated to reviving Indian traditions and stories
           through handmade miniature and paper art. Every piece echoes patience, detail, and a passion for spreading messages of culture, unity, and joy.
         </p>
         <Link to="/portfolio" className="portfolio-link">See My Artistic Journey</Link>

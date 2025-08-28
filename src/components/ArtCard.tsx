@@ -23,7 +23,9 @@ const ArtCard: React.FC<ArtCardProps> = ({
       {artist && <div className="art-artist">By {artist}</div>}
       {price && <div className="art-price">{price}</div>}
       {description && <div className="art-description">{description}</div>}
-      <button className="art-btn">Options Available</button>
+
+     
+    
     </div>
   </div>
 );

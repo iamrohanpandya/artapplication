@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { paperArtData } from '../data/paperArtData';
 import '../styles/PaperArt.css';
 
@@ -13,7 +13,9 @@ const PaperArt = () => {
             <div className="paper-info">
               <h3>{art.title}</h3>
               {art.description && <p>{art.description}</p>}
-              <button>OPTIONS AVAILABLE</button>
+
+            
+            
             </div>
           </div>
         ))}

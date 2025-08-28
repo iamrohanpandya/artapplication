@@ -1,4 +1,4 @@
-import React from 'react';
+
 import ArtCard from '../components/ArtCard';
 import { miniatureArtData } from '../data/miniatureData';
 
@@ -11,8 +11,8 @@ const MiniatureArt = () => (
           key={art.id}
           title={art.title}
           image={art.image}
-          artist={art.artist}
-          price={art.price}
+ //         artist={art.artist}
+   //       price={art.price}
           description={art.description}
         />
       ))}

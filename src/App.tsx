@@ -7,6 +7,13 @@ import PaperArt from './pages/PaperArt';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import Certificates from './pages/Certificates';
+import Exhibitions from './pages/Exhibitions';
+import Media from './pages/Media';
+import PaperMache from './pages/PaperMache';
+
+
+
 import './App.css'; // ✅ Import CSS file
 
 
@@ -25,6 +32,14 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             
             <Route path="/contact" element={<Contact />} />
+            <Route path="/certificates" element={<Certificates />} />
+            <Route path="/exhibitions" element={<Exhibitions />} />
+            <Route path="/media" element={<Media />} />
+            <Route path="/paper-mache" element={<PaperMache />} />
+
+
+
+
           </Routes>
         </main>
 

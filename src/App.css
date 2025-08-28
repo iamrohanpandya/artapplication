@@ -1,4 +1,6 @@
-/* ===== Layout Reset ===== */
+/* ===== Base & Reset ===== */
+*, *::before, *::after { box-sizing: border-box; }
+
 html, body, #root {
   height: 100%;
   margin: 0;
@@ -8,15 +10,16 @@ html, body, #root {
   color: #2d2d2d;
 }
 
-/* ===== Flex-based Layout ===== */
-body {
+/* Make the React wrapper the flex container (NOT body) */
+#root, .app-container {
+  min-height: 100svh;         /* safer than 100vh on mobile */
   display: flex;
   flex-direction: column;
 }
 
-/* Make <main> expand to fill space between Navbar and Footer */
+/* ===== Main grows to push footer down ===== */
 main {
-  flex: 1;
+  flex: 1 0 auto;
   padding: 2rem 1rem;
   box-sizing: border-box;
   max-width: 1200px;
@@ -24,7 +27,7 @@ main {
   width: 100%;
 }
 
-/* ===== Reusable Card Class (Optional) ===== */
+/* ===== Reusable Card ===== */
 .card {
   padding: 1.5rem;
   background: #f7f7f7;
@@ -33,23 +36,13 @@ main {
   margin-bottom: 1.5rem;
 }
 
-/* ===== Responsive Adjustments ===== */
+/* ===== Footer safety ===== */
+footer { flex-shrink: 0; }
+
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
-  main {
-    padding: 1.5rem 1rem;
-  }
+  main { padding: 1.5rem 1rem; }
 }
-
 @media (max-width: 480px) {
-  main {
-    padding: 1rem 0.75rem;
-  }
-}
-
-/* ===== Footer (if needed) ===== */
-footer {
-  background-color: #eee;
-  padding: 1rem;
-  text-align: center;
-  font-size: 0.9rem;
+  main { padding: 1rem 0.75rem; }
 }
